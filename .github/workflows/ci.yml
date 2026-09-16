@@ -29,9 +29,13 @@ jobs:
             exit 1
           fi
 
-      # Guarantees the bundle the browser loads is syntactically loadable.
+      # Guarantees the bundle the browser loads is syntactically loadable, and
+      # that loading it actually registers the language and every dictionary.
       - name: Bundle parses
         run: node --check lib/client.js
+
+      - name: Bundle registers the language and dictionaries
+        run: node scripts/smoke.mjs
 
       - name: package.json has no runtime dependencies
         run: |

@@ -39,7 +39,9 @@
     "check": "node scripts/check.mjs",
     "check:strict": "node scripts/check.mjs --strict",
     "drift": "node scripts/drift.mjs",
-    "extract": "node scripts/extract.mjs"
+    "extract": "node scripts/extract.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "test": "node scripts/check.mjs && node scripts/smoke.mjs"
   },
   "keywords": [
     "dsh-plugin",

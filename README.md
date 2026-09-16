@@ -74,6 +74,7 @@ node scripts/check.mjs          # структура словарей: ключ�
 node scripts/check.mjs --strict # плюс ошибка на каждый непереведённый ключ
 node scripts/drift.mjs          # покрытие против установленного dsh (exit 1 при пробелах)
 node scripts/build.mjs          # dict/ru/*.json -> lib/client.js
+node scripts/smoke.mjs          # загрузить бандл как браузер и проверить регистрацию
 ```
 
 Порядок правки перевода:
