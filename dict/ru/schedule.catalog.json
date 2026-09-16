@@ -1,0 +1,20 @@
+{
+  "frequency.every": "Каждые {value} {unit}",
+  "frequency.once": "Один раз",
+  "list.aria": "Активные напоминания",
+  "relative.future": "через {value} {unit}",
+  "relative.now": "Пора сейчас",
+  "relative.overdue": "Просрочено на {value} {unit}",
+  "status.overdue": "Просрочено",
+  "status.scheduled": "Запланировано",
+  "trigger.one": "{count} напоминание",
+  "trigger.other": "Напоминаний: {count}",
+  "unit.day.one": "день",
+  "unit.day.other": "дней",
+  "unit.hour.one": "час",
+  "unit.hour.other": "часов",
+  "unit.minute.one": "минута",
+  "unit.minute.other": "минут",
+  "unit.second.one": "секунда",
+  "unit.second.other": "секунд"
+}

@@ -1,0 +1,52 @@
+{
+  "name": "dsh-locale-ru",
+  "version": "0.1.0",
+  "description": "Russian language pack for the DeepSeek Harness web UI (community)",
+  "type": "module",
+  "main": "index.js",
+  "author": "EqOSl1me",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EqOSl1me/dsh-locale-ru.git"
+  },
+  "files": [
+    "index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "dict",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "check:strict": "node scripts/check.mjs --strict",
+    "drift": "node scripts/drift.mjs",
+    "extract": "node scripts/extract.mjs"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "russian",
+    "localization",
+    "i18n"
+  ],
+  "private": false
+}

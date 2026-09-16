@@ -1,0 +1,8 @@
+{
+  "revision": "183f08e9c6dde7e36cd2318eaee70b0da08fb35e",
+  "tag": "dsh-v0.1.5-rc.1",
+  "version": "0.1.5-rc.1",
+  "repo": "https://github.com/deepseek-ai/deepseek-harness",
+  "extractedWith": "scripts/extract.mjs",
+  "note": "Corpus is the en/zh key inventory of every locale.register() call site at this revision. Re-extract after every dsh upgrade."
+}

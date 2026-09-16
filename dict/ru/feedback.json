@@ -1,0 +1,22 @@
+{
+  "action.dislike": "Плохой ответ",
+  "action.dislikeActive": "Убрать оценку",
+  "action.like": "Хороший ответ",
+  "action.likeActive": "Убрать оценку",
+  "category.instruction-following": "Понимание и выполнение инструкций",
+  "category.other": "Другое",
+  "category.product-interaction": "Возможности продукта и взаимодействие",
+  "category.resource-cost": "Расход ресурсов и стоимость",
+  "category.security-privacy-permission": "Безопасность, приватность и разрешения",
+  "category.service-stability": "Стабильность сервиса",
+  "category.task-result": "Результат задачи",
+  "dialog.categories": "Категория отзыва",
+  "dialog.detail": "Подробности отзыва",
+  "dialog.hint": "Добавьте подробности, чтобы помочь нам стать лучше. В отправку войдёт журнал текущего диалога.",
+  "dialog.title": "Отправить отзыв",
+  "error.conflict": "Эта оценка была изменена в другом месте; показано актуальное состояние",
+  "error.generic": "Не удалось сохранить оценку",
+  "error.load": "Не удалось загрузить оценку",
+  "error.noteTooLarge": "Описание слишком длинное; сократите его и отправьте снова",
+  "toast.recorded": "Спасибо за отзыв"
+}

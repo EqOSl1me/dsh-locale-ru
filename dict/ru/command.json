@@ -1,0 +1,16 @@
+{
+  "description.compact": "Сжать раннюю историю диалога",
+  "description.export": "Скачать журнал этой сессии в виде ZIP-архива",
+  "description.feedback": "оставить отзыв об этой сессии",
+  "description.goal": "задать или посмотреть цель длительной задачи",
+  "description.permission": "Переключить пресет разрешений (режим песочницы + правила подтверждений)",
+  "description.plan": "Войти в режим плана или выйти из него",
+  "listbox.aria": "Совпадения для /{command}",
+  "notice.attachmentsUnsupported": "/{command} не принимает вложения; сначала удалите их",
+  "overlay.aria": "Варианты /{command}",
+  "search.aria": "Фильтрация вариантов",
+  "search.placeholder": "Поиск…",
+  "status.applying": "Применение…",
+  "status.empty": "Нет вариантов",
+  "status.loading": "Загрузка вариантов…"
+}

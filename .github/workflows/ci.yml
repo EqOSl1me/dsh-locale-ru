@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  dictionaries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Structural contract: every key exists upstream, placeholders match,
+      # no empty values. Fails on a stale namespace or a renamed key.
+      - name: Check dictionaries
+        run: node scripts/check.mjs
+
+      # The committed bundle must be exactly what the dictionaries build to,
+      # or a user installing from GitHub gets stale text.
+      - name: Verify lib/client.js is up to date
+        run: |
+          node scripts/build.mjs
+          if ! git diff --exit-code -- lib/client.js; then
+            echo "::error::lib/client.js is stale - run 'node scripts/build.mjs' and commit the result"
+            exit 1
+          fi
+
+      # Guarantees the bundle the browser loads is syntactically loadable.
+      - name: Bundle parses
+        run: node --check lib/client.js
+
+      - name: package.json has no runtime dependencies
+        run: |
+          node -e "
+            const p = require('./package.json');
+            const deps = Object.keys(p.dependencies || {});
+            if (deps.length) { console.error('unexpected runtime deps: ' + deps.join(', ')); process.exit(1) }
+            console.log('no runtime dependencies');
+          "
